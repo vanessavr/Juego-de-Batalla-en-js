@@ -1,0 +1,133 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 500vh;
+    background-image: url(/img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#start-screen{
+    max-width: 60rem;
+   
+    padding: 20px;
+    border-radius: 8px;
+    margin: 300px;
+    text-align: center; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url(https://i.pinimg.com/originals/0c/bf/2f/0cbf2f5c3fb37d033c0bc791ae196dbb.gif);
+    background-size: cover;
+    color: #ffffff;
+    margin-top: 250px;
+}
+
+
+#game-screen {
+    max-width: 60rem;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    /* text-align: center; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url(/img/fondo2.jpg);
+    background-size: cover;
+}
+
+#game-screen {
+    display: none;
+}
+
+.personajes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+#attack-options, #defense-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#attack-options img:hover,
+#defense-options img:hover {
+    cursor: pointer;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+
+h2 {
+  
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+}
+
+p {
+    font-weight: bold;
+        text-align: center;
+        font-size: 25px;
+}
+
+
+/* #attack-options,
+#defense-options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    /* Puedes ajustar el valor de margen según sea necesario */
+/* } */ */
+
+
+#game-screen p{
+    background-color: black;
+        /* Color de fondo blanco */
+        padding: 20px;
+        /* Añade espacio interno alrededor del contenido */
+        border-radius: 10px;
+        /* Añade bordes redondeados al contenedor */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Agrega una sombra ligera */
+        margin: 20px;
+        /* Puedes ajustar el margen según tus necesidades */
+        color: #ffffff;
+        /* Color del texto */
+        font-size: 16px;
+        /* Tamaño de la fuente */
+        line-height: 1.5;
+        /* Altura de línea */
+    
+}
+
+
+
+button {
+    background-color: #cbc2fb;
+    border-radius: 100px;
+    box-shadow: rgba(113, 44, 187, 0.2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: rgb(109, 0, 128);
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button:hover {
+    box-shadow: rgba(101, 44, 187, 0.35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}

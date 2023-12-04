@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Batalla</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="start-screen">
+        <h1>Bienvenido al Juego de Batalla</h1>
+        <button onclick="IniciarJuego()">Iniciar Juego</button>
+        <p>Creado por: Vanessa Vasquez Rincon</p>
+        <p>Programa: Técnico en Programación de Software</p>
+        <p>Número de Ficha: 2770672</p>
+    </div>
+
+    <div id="game-screen">
+        <h2>¡Batalla!</h2>
+        <div class="personajes">
+            <div id="player-info">
+                <img src="/img/personaje_principal.png" width="250" alt="">
+                <p id="player-health" style="background-image: url(/img/barra_vida.png);background-size: cover;background-repeat: no-repeat; height: 51px;"></p>
+            </div>
+            <div id="enemy-info">
+                <img src="/img/enemigo.png" width="300" alt="">
+                <p id="enemy-health" style="background-image: url(/img/barra_vida.png);background-size: cover;background-repeat: no-repeat; height: 51px; width: 90%;"></p>
+            </div>
+
+        </div>
+        
+        <div id="message-container">
+            <p id="game-message"></p>
+            <p id="battle-message"></p>
+        </div>
+        <div id="attack-options">
+            <img src="/img/atq_agua.png" height="110" alt="" onclick="seleccionarAtaque('agua')">
+            <img src="/img/atq_roca.png" height="105" alt="" onclick="seleccionarAtaque('roca')">
+            <img src="/img/atq_fuego.png" height="105" alt="Carta fuego" onclick="seleccionarAtaque('fuego')">
+        </div>
+        <div id="defense-options">
+            <img src="/img/def_agua.png" height="120" alt="Carta defensa de agua" onclick="seleccionarDefensa('agua')">
+            <img src="/img/def_roca.png" height="118" alt="" onclick="seleccionarDefensa('roca')">
+            <img src="/img/def_fuego.png" height="114" alt="" onclick="seleccionarDefensa('fuego')">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
